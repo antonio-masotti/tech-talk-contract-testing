@@ -6,24 +6,21 @@
 
 % THEME SETTINGS
 \usetheme{CambridgeUS}
-\usepackage{xcolor}
+%\usepackage{xcolor}
 \definecolor{blsDefault}{RGB}{145,196,52} % UBC Blue (primary)
 \definecolor{blsSecondary}{RGB}{219,234,179} % UBC Blue (primary)
-%\usecolortheme[named=blsSecondary]{structure}
 
 \setbeamercolor{title}{fg=blsDefault,bg=white} % First slide
-%\setbeamercolor{frametitle}{fg=black} % Frame titles and subtitles
 \setbeamercolor{palette primary}{bg=blsSecondary,fg=black} % Main color
 \setbeamercolor{palette secondary}{bg=blsDefault,fg=white} % Secondary color
 \setbeamercolor{palette tertiary}{bg=blsDefault,fg=white}
 \setbeamercolor{structure}{fg=blsDefault} % itemize, enumerate, etc
 \setbeamercolor{section in toc}{fg=black} % TOC sections
-%\useoutertheme[footline=authortitle]{default}
+\setbeamercolor{subsection in head/foot}{bg=blsSecondary,fg=black}
+
 \useinnertheme{rectangles}
 \setbeamertemplate{frametitle}{\color{black}\bfseries\insertframetitle\par\vskip-6pt\hrulefill}
 
-%% Override palette coloring with secondary
-\setbeamercolor{subsection in head/foot}{bg=blsSecondary,fg=black}
 
 % FONT SETTINGS
 \usepackage{fontspec}
