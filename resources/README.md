@@ -28,3 +28,16 @@
 - Arnout, Karine. *[Contracts and Tests](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=affc18f5205cc94e0021b5647f325209d7d179f1)*. Diss. Ph. D. research plan, 2002.
 
 - Warren, Claude. “[Simplifying contract testing](https://www.researchgate.net/publication/271072627_Simplifying_Contract_Testing/link/55c64f4a08aebc967df5361d/download)”, Doctor Dobbs Journal 2014
+
+## Videos
+
+**Videos**
+- Dave Farley, [Contract Testing for Microservices is a MUST](https://www.youtube.com/watch?v=Fh8CqZtghQw)
+- Holly Cummins, [Pact Contract Testing for Quarkus](https://www.youtube.com/watch?v=FHNXlOJvCJU)
+
+
+## Articles And Docs
+
+- [Pact](https://docs.pact.io/)
+- [Contract Testing](https://www.blazemeter.com/blog/contract-testing) on blazemeter.com
+- [Contract Testing Serverless and Asynchronous Applications](https://dius.com.au/2018/10/01/contract-testing-serverless-and-asynchronous-applications-part-2/) on blazemeter.com

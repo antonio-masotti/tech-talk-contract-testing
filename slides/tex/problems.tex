@@ -105,10 +105,24 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}{Embedded Animation}
+  \begin{center}
+    \animategraphics[loop,controls,scale=.28]{2}{./assets/error-propagation/errProp-}{0}{6}
+  \end{center}
+\end{frame}
+
 \begin{frame}{Problem with E2E Tests}
+  They're very important, \textbf{but...}
   \begin{itemize}
-    \item Hard or impossible to test some scenarios (system not available)
+    \item In large architectures not reproduceable locally
+    \item Hard or impossible to test some scenarios (e.g. system not available)
     \item Expensive (timely and money)
+    \item In some cases need for a separate CI Environment
+    \begin{itemize}
+      \item Expensive to provision and maintain
+      \item Not always possible to reproduce the same environment
+      \item Need for tweaks (custom endpoints, prepared databases)
+    \end{itemize}
   \end{itemize}
 \end{frame}
 
@@ -121,44 +135,3 @@
 \end{frame}
 
 
-
-
-
-
-
-\subsection{How to test microservices?}
-\begin{frame}{Mocks}
-  \begin{itemize}
-    \item Mocking
-  \end{itemize}
-\end{frame}
-
-
-\begin{frame}{Problem Statement}
-  When organizations grow and so do the number of services
-  \begin{itemize}
-    \item How can we know, that the \textbf{whole} system works, when I publish changes?
-    \item How can I avoid dependency on E2E tests for deployment and still be confident?
-    \begin{itemize}
-      \item Testing microservices in isolation is not enough
-    \end{itemize}
-  \end{itemize}
-\end{frame}
-
-\begin{frame}{Many hops...}
-  \begin{itemize}
-    \item Show here what it would mean for us to have pure e2e tests
-  \end{itemize}
-\end{frame}
-
-\begin{frame}{Problems}
-  \begin{itemize}
-    [<+->]
-    \item Local changes, even if tested, do not assure that the system as whole is working
-    \item Loosely coupled architecture but tightly coupled teams. Such systems are - no matter the architecture - still monolithic from a CD perspective
-  \end{itemize}
-\end{frame}
-
-\begin{frame}{Embedded Animation}
-  \animategraphics[loop,controls,scale=.2]{2}{./assets/error-propagation/errProp-}{0}{6}
-\end{frame}
