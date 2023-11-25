@@ -31,9 +31,60 @@
 \usepackage{verbatim}
 \usepackage{textpos}
 \usepackage{animate}
+\usepackage{blkarray}
+\usepackage{listings}
+
+\lstdefinelanguage{Dockerfile}
+{
+  morekeywords={FROM, RUN, CMD, LABEL, MAINTAINER, EXPOSE, ENV, ADD, COPY,
+ENTRYPOINT, VOLUME, USER, WORKDIR, ARG, ONBUILD, STOPSIGNAL, HEALTHCHECK,
+SHELL},
+  morecomment=[l]{\#},
+  morestring=[b]"
+}
+
+\lstdefinelanguage{json}
+{
+  morecomment=[l]{\#},
+  morestring=[b]"
+}
+
+\lstset{
+  columns=flexible,
+  keepspaces=true,
+  showstringspaces=false,
+  basicstyle=\tiny\ttfamily,
+  commentstyle=\color{gray},
+  keywordstyle=\color{purple},
+  stringstyle=\color{green}
+}
 
 
 % LANGUAGE SETTINGS
 \usepackage{polyglossia}
 \setdefaultlanguage{english}
 \setotherlanguage{german}
+
+
+
+%%%%%%%%% CUSTOM IMPLEMENTATIONS %%%%%%%
+\usepackage{graphicx}
+\usepackage{framed}
+\usepackage{extarrows}
+
+% QUOTES
+\newcommand*\openquote{\makebox(25,-22){\scalebox{5}{``}}}
+\newcommand*\closequote{\makebox(25,-22){\scalebox{5}{''}}}
+\colorlet{shadecolor}{blsSecondary}
+
+\makeatletter
+\newif\if@right
+\def\shadequote{\@righttrue\shadequote@i}
+\def\shadequote@i{\begin{snugshade}\begin{quote}\openquote}
+\def\endshadequote{%
+  \if@right\hfill\fi\closequote\end{quote}\end{snugshade}}
+\@namedef{shadequote*}{\@rightfalse\shadequote@i}
+\@namedef{endshadequote*}{\endshadequote}
+\makeatother
+
+

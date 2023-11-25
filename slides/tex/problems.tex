@@ -1,11 +1,76 @@
+
+
+\begin{frame}{A company growth...}
+  \begin{itemize}
+    \item Show here the rapid growth of Leasing Object
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{The Problem...}
+  \begin{itemize}
+    \item Devs don't have confidence in deploying changes
+    \item Also... what happens if we want to introduce a change in an existing service?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{The Problem...}
+  \begin{shadequote}
+    \hspace{1cm} Every time we touch one service, all the others break :(
+  \end{shadequote}
+  \begin{center}
+    \includegraphics[scale=.3]{./assets/sad_dev.jpeg}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}{Loosely coupled architecture... tightly coupled teams}
+  \begin{center}
+    \includegraphics[scale=.47]{./assets/coupling.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Updating a microservice: the sad Atlassian case}
+  \begin{lstlisting}[language=json]
+{
+"user": "Mike",
+"address": "Something"
+}
+    \end{lstlisting}
+\end{frame}
+
+\subsection{How to test microservices?}
+\begin{frame}{Mocks}
+  \begin{itemize}
+    \item Mocking
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Problem Statement}
+  When organizations grow and so do the number of services
+  \begin{itemize}
+    \item How can we know, that the \textbf{whole} system works, when I publish changes?
+    \item How can I avoid dependency on E2E tests for deployment and still be confident?
+    \begin{itemize}
+      \item Testing microservices in isolation is not enough
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Many hops...}
+  \begin{itemize}
+    \item Show here what it would mean for us to have pure e2e tests
+  \end{itemize}
+\end{frame}
+
 \begin{frame}{Problems}
   \begin{itemize}
     [<+->]
     \item Local changes, even if tested, do not assure that the system as whole is working
-    \item Loosely coupled architecture but tightly coupled teams
+    \item Loosely coupled architecture but tightly coupled teams. Such systems are - no matter the architecture - still monolithic from a CD perspective
   \end{itemize}
 \end{frame}
 
 \begin{frame}{Embedded Animation}
-  \animategraphics[loop,controls,width=\linewidth]{2}{./assets/error-propagation/errProp-}{0}{6}
+  \animategraphics[loop,controls,scale=.2]{2}{./assets/error-propagation/errProp-}{0}{6}
 \end{frame}perl: warning: Setting locale failed.
