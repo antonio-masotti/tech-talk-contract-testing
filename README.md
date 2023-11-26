@@ -30,9 +30,16 @@ Contract Testing.
 **Videos**
 - Dave Farley, [Contract Testing for Microservices is a MUST](https://www.youtube.com/watch?v=Fh8CqZtghQw)
 - Holly Cummins, [Pact Contract Testing for Quarkus](https://www.youtube.com/watch?v=FHNXlOJvCJU)
+- J.B. Rainsberger, [Integration Tests are a Scam](https://www.infoq.com/presentations/integration-tests-scam/)
 
 ## Tools
 
 - [Pact](https://docs.pact.io/)
 
 ## Related Repositories
+
+- See the many [demos and examples](https://github.com/orgs/pactflow/repositories?q=example&type=all&language=&sort=) under pactflow Github organization
+- [Terraform Provider Pact](https://github.com/pactflow/terraform-provider-pact)
+- [christian-draeger/pact-example](https://github.com/christian-draeger/pact-example)
+- [pactflow/example-consumer-js-sns](https://github.com/pactflow/example-consumer-js-sns)
+- [mbryia/contract-testing](https://github.com/mbryla/contract-testing)

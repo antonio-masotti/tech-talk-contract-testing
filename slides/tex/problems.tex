@@ -105,26 +105,38 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}{The bad side of mocks}
+  \begin{center}
+    \animategraphics[loop,controls,scale=.5]{15}{./assets/mock/mock_problem-}{0}{232}
+  \end{center}
+\end{frame}
+
 \begin{frame}{Embedded Animation}
   \begin{center}
-    \animategraphics[loop,controls,scale=.28]{2}{./assets/error-propagation/errProp-}{0}{6}
+    \animategraphics[loop,controls,scale=.28]{2}{./assets/error-propagation/errProp-}{0}{4}
   \end{center}
 \end{frame}
 
 \begin{frame}{Problem with E2E Tests}
-  They're very important, \textbf{but...}
+  They're very important (\textit{qua} realistic), \textbf{but...}
   \begin{itemize}
-    \item In large architectures not reproduceable locally
-    \item Hard or impossible to test some scenarios (e.g. system not available)
-    \item Expensive (timely and money)
-    \item In some cases need for a separate CI Environment
+    \item they tend to be not reproduceable locally
+    \item they're hard or impossible to test some scenarios (e.g. system not available)
+    \item they're expensive (time and money)
     \begin{itemize}
-      \item Expensive to provision and maintain
-      \item Not always possible to reproduce the same environment
-      \item Need for tweaks (custom endpoints, prepared databases)
+      \item The longer we need to find out what's wrong, the more expensive it is
     \end{itemize}
+    \item Not few companies report \textit{excessive test setup}
+    \item they're prone to flakiness
   \end{itemize}
 \end{frame}
+
+\begin{frame}{Architecture example}
+  \begin{center}
+    \includegraphics[scale=.3]{./assets/od.png}
+  \end{center}
+\end{frame}
+
 
 \begin{frame}{Distributed $\ne$ Decoupled}
   \begin{center}
@@ -134,4 +146,33 @@
   \end{center}
 \end{frame}
 
+\begin{frame}{What do we need?}
+  \only<1>{
 
+    We need a way to \textbf{test and ensure correct data exchange} between services,
+    with the following characteristics:
+
+  \vspace{.5cm}
+
+    \begin{itemize}
+      \item \textbf{Fast feedback} on changes
+      \item \textbf{Confidence} in our changes
+      \item \textbf{Reproducibility} of tests
+      \item \textbf{Realistic} tests
+      \item \textbf{Cheap} tests
+      \item \textbf{Easy} to write and maintain
+    \end{itemize}
+  }
+
+    \only<2>{
+      \textit{Seen so far:}
+
+      \begin{itemize}
+        \item \textbf{Option A}: Mocks
+        \item \textbf{Option B}: E2E / System Tests with real infrastructure
+      \end{itemize}
+
+      \textit{Is there an option C?}
+    }
+
+\end{frame}

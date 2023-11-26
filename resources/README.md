@@ -34,10 +34,12 @@
 **Videos**
 - Dave Farley, [Contract Testing for Microservices is a MUST](https://www.youtube.com/watch?v=Fh8CqZtghQw)
 - Holly Cummins, [Pact Contract Testing for Quarkus](https://www.youtube.com/watch?v=FHNXlOJvCJU)
-
+- J.B. Rainsberger, [Integration Tests are a Scam](https://www.infoq.com/presentations/integration-tests-scam/)
 
 ## Articles And Docs
 
 - [Pact](https://docs.pact.io/)
 - [Contract Testing](https://www.blazemeter.com/blog/contract-testing) on blazemeter.com
 - [Contract Testing Serverless and Asynchronous Applications](https://dius.com.au/2018/10/01/contract-testing-serverless-and-asynchronous-applications-part-2/) on blazemeter.com
+- [Understanding the power of isolated object testing](https://bartling.blogspot.com/2012/01/understanding-power-of-isolated-object.html)
+- [Contract testing asynchronous messaging with Pact and MockK](https://www.fabrizioduroni.it/2021/11/05/contract-testing-asynchronous-messaging-pact-junit-mockk/)

@@ -301,3 +301,7 @@ TSWLatexianTemp*
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
 
+
+# Assets
+assets/error-propagation/*.png
+assets/mock/*.png
