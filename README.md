@@ -43,3 +43,5 @@ Contract Testing.
 - [christian-draeger/pact-example](https://github.com/christian-draeger/pact-example)
 - [pactflow/example-consumer-js-sns](https://github.com/pactflow/example-consumer-js-sns)
 - [mbryia/contract-testing](https://github.com/mbryla/contract-testing)
+- [antonio-masotti/tech-talk_contract-testing_sqs-demo](https://github.com/antonio-masotti/tech-talk_contract-testing_sqs-demo) - my own demo for this tech talk
+  - *for the nodejs version, see the branch `demo/contract-testing` on the LC repositories*

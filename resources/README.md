@@ -35,6 +35,8 @@
 - Dave Farley, [Contract Testing for Microservices is a MUST](https://www.youtube.com/watch?v=Fh8CqZtghQw)
 - Holly Cummins, [Pact Contract Testing for Quarkus](https://www.youtube.com/watch?v=FHNXlOJvCJU)
 - J.B. Rainsberger, [Integration Tests are a Scam](https://www.infoq.com/presentations/integration-tests-scam/)
+- The entire [@PactFlow Channel](https://www.youtube.com/@PactFlow) on Youtube is a goldmine of information on Contract Testing
+- [Introduction to Pact JS](https://www.youtube.com/watch?v=tTpkLwYOTZo&list=PLwy9Bnco-IpcdSXA4OutjG_lDCCHOXxYL)
 
 ## Articles And Docs
 

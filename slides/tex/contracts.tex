@@ -5,9 +5,18 @@
 \begin{frame}{Contracts}
 
     \begin{block}{Contracts}
-        A formal agreement between parties or individual. Synonyms: pact, agreement, protocol, deal
+        \textit{A formal agreement between parties or individual.
+        Synonyms: pact, agreement, protocol, deal}
 
         --- Oxford English Dictionary
+    \end{block}
+
+    \begin{block}{Contract Testing}
+        \textit{Contract testing is a technique for testing an integration point by checking each
+        application in isolation to ensure the messages it sends or receives conform to a
+        shared understanding that is documented in a "contract".}
+
+        --- Pact Docs
     \end{block}
 
 \end{frame}
@@ -50,28 +59,60 @@
     Here I will present you the \textbf{Consumer Driven Contracts} approach.
 \end{frame}
 
-\begin{frame}{Consumer Driven Contracts}
-    "`\textit{A strange inversion of reasoning...}"'
-    \begin{columns}
-        \begin{column}{0.5\textwidth}
-            \begin{itemize}
-                \item Consumer Driven Contracts
-                \item Pact is a contract testing tool
-                \item Pact is a specification for consumer driven contracts
-                \item Pact is a set of frameworks that support consumer driven contracts
-            \end{itemize}
-        \end{column}
-        \begin{column}{0.5\textwidth}
-            \begin{center}
-                \includegraphics[width=.5\textwidth]{./assets/bacteria}
-                \includegraphics[width=.5\textwidth]{./assets/dennet}
-            \end{center}
-        \end{column}
+\begin{frame}{Provider driven contracts}
+    \only<1>{
+    \begin{center}
+        \includegraphics[scale=.3]{./assets/provider_driven}
+    \end{center}
+    }
 
-    \end{columns}
+    \only<2>{
+    \begin{center}
+        \includegraphics[scale=.3]{./assets/model3}
+    \end{center}
+    }
+
+
+\end{frame}
+
+\begin{frame}{Consumer Driven Contracts}
+    \begin{shadequote}
+        \hspace{.5cm}
+        A strange inversion of reasoning\ldots -- D. Dennet
+    \end{shadequote}
+    \textit{}
+
+    \only<1>{
+    \begin{center}
+        \includegraphics[height=.6\textheight]{./assets/bacteria}
+        \includegraphics[height=.4\textheight]{./assets/dennet}
+    \end{center}
+    }
+
+    \only<2>{
+    \begin{center}
+        \includegraphics[width=.8\textwidth]{./assets/consumer_driven}
+    \end{center}
+    }
 \end{frame}
 
 
 \subsection{Pact}
 
+\begin{frame}{Pact}
+    \begin{itemize}
+        \item Pact is a contract testing tool
+        \item It is a JVM tool, but it can be used with any language
+        \item It is a \textbf{consumer driven} tool
+        \item It is a \textbf{mocking} tool
+        \item It is a \textbf{verification} tool
+        \item It is a \textbf{documentation} tool
+        \item It is a \textbf{collaboration} tool
+        \end{itemize}
+\end{frame}
 
+\begin{frame}{Pact - Overview}
+    \begin{center}
+        \includegraphics[width=.8\textwidth]{./assets/pact_overview}
+    \end{center}
+\end{frame}

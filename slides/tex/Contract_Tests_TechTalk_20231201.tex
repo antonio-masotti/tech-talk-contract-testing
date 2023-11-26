@@ -11,44 +11,36 @@
 
 	\begin{frame}
 		\maketitle
-		%               \begin{center}
-		%               \includegraphics[scale=.4]{./assets/logo.png}
-		%               \end{center}
-		%\includegraphics[height=.4\textheight,width=.5\textwidth]{./assets/titelbild.jpg}
 	\end{frame}
 
 	\begin{frame}{Outline}
-		\tableofcontents
+		\tableofcontents[hideallsubsections]
 	\end{frame}
 
 
 % Outline frame
 	\AtBeginSection[ ]
 	{
-		\frame{\tableofcontents[currentsection]}
+		\frame{\tableofcontents[currentsection, hideallsubsections]}
 	}
 
+	\section{Introduction.. get the ball rolling}
 	\input{introduction.tex}
 
 
-	\section{Problem statement}
-
+	\section{The problem(s) we're trying to solve}
 	\input{problems.tex}
 
 
 	\section{Option C : Contract Testing}
-
 	\input{contracts.tex}
 
 
-	\section{Demo Time}
-
+	\section{Demo Time - Hands on lab}
 	\begin{frame}{Hintergrund}
-
 		\begin{center}
 			\includegraphics[width=.8\textwidth]{./assets/demo_time}
 		\end{center}
-
 	\end{frame}
 
 
