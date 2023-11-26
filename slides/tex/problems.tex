@@ -1,72 +1,76 @@
-\subsection{Company growth}
+\subsection{As the company grows... so does its architecture}\label{subsec:company-growth}
 
 \begin{frame}{Bob's company is being very successfull...}
   \begin{center}
-    \includegraphics[width=.7\textwidth]{./assets/bob.jpeg}
+    \includegraphics[width=.7\textwidth]{./assets/bob}
   \end{center}
 \end{frame}
 
-\begin{frame}{A company growth... so its architecture}
+\begin{frame}{The shy beginning...}
   \begin{center}
     \includegraphics[scale=.5]{./assets/model1}
   \end{center}
 \end{frame}
 
-\begin{frame}{A company growth... so its architecture}
+\begin{frame}{Baby's first steps...}
   \begin{center}
     \includegraphics[scale=.35]{./assets/model2}
   \end{center}
 \end{frame}
 
 
-\begin{frame}{A company growth... so its architecture}
+\begin{frame}{Bigger steps...}
   \begin{center}
     \includegraphics[scale=.3]{./assets/model3}
   \end{center}
 \end{frame}
 
 
-\begin{frame}{Bob is happy...}
+\begin{frame}{...towards madness}
   \begin{center}
     \includegraphics[scale=.45]{./assets/chaos}
+
+    \textit{Toni on a good day}
   \end{center}
 \end{frame}
 
-\begin{frame}{The Problem...}
+\subsection{The dark side of microservices}
+\begin{frame}{The Problem(s)...}
   \begin{shadequote}
     \hspace{1cm} Every time we touch one service, all the others break :(
   \end{shadequote}
   \begin{columns}
     \begin{column}{0.6\textwidth}
       \begin{itemize}
-        \item Dependency hell
-        \item Devs don't have confidence in deploying changes
+        \item Risk of dependency hell
+        \item Devs loose confidence in deploying changes
         \begin{itemize}
           \item Consequences of changes are hard to track
-          \item Distributed architectures are hard to test
+          \item Distributed architectures are \textit{hard} to test
         \end{itemize}
       \end{itemize}
     \end{column}
     \begin{column}{0.4\textwidth}
-      \includegraphics[scale=.3]{./assets/sad_dev.jpeg}
+      \includegraphics[scale=.3]{./assets/sad_dev}
     \end{column}
   \end{columns}
   \end{frame}
 
+\subsection{A familiar story...}
 \begin{frame}{Architecture example: Online Delivery}
   \begin{center}
-    \includegraphics[scale=.3]{./assets/od.png}
+    \includegraphics[scale=.3]{./assets/od}
   \end{center}
 \end{frame}
 
 \begin{frame}{Architecture example: Leasing Calculator}
   \begin{center}
-    \includegraphics[scale=.3]{./assets/lc.png}
+    \includegraphics[scale=.3]{./assets/lc}
   \end{center}
 \end{frame}
 
+\subsection{We're not alone...}
 \begin{frame}[fragile]{Updating a microservice: the sad Atlassian case}
-
   \begin{columns}
     \begin{column}{0.5\textwidth}
       \begin{lstlisting}[language=json]
@@ -90,25 +94,27 @@
 \end{center}
 \end{frame}
 
-\subsection{Test Typology}
-
-\begin{frame}{Test Typology}
+\subsection{Testing in a distributed world}
+\begin{frame}{Test Pyramid}
   \begin{center}
     \includegraphics[scale=.6]{./assets/test_pyramid}
   \end{center}
 \end{frame}
 
 \begin{frame}{The problem with Unit Tests alone}
-  \begin{itemize}
-    \item Local changes, even if tested, do not assure that the system as whole is working
-    \item Mocks are not guaranteed to really represent the other part of the system
-  \end{itemize}
-\end{frame}
-
-\begin{frame}{The bad side of mocks}
-  \begin{center}
-    \animategraphics[loop,controls,scale=.5]{15}{./assets/mock/mock_problem-}{0}{232}
-  \end{center}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item Local tests do not assure that the system as whole is still working
+        \item Mocks are not guaranteed to really represent the other part of the system
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{center}
+        \animategraphics[loop,controls,width=.9\textwidth]{15}{./assets/mock/mock_problem-}{0}{232}
+      \end{center}
+    \end{column}
+    \end{columns}
 \end{frame}
 
 \begin{frame}{Embedded Animation}
@@ -119,36 +125,40 @@
 
 \begin{frame}{Problem with E2E Tests}
   They're very important (\textit{qua} realistic), \textbf{but...}
-  \begin{itemize}
-    \item they tend to be not reproduceable locally
-    \item they're hard or impossible to test some scenarios (e.g. system not available)
-    \item they're expensive (time and money)
-    \begin{itemize}
-      \item The longer we need to find out what's wrong, the more expensive it is
-    \end{itemize}
-    \item Not few companies report \textit{excessive test setup}
-    \item they're prone to flakiness
-  \end{itemize}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item they're hard to run locally (especially in a distributed system)
+        \item it's hard or impossible to test some scenarios (e.g. system not available)
+        \item they're timely and financially expensive
+        \begin{itemize}
+          \item The longer we need to find out what's wrong, the more expensive it is
+        \end{itemize}
+        \item not few companies fall in the trap of \textit{excessive test setup}
+        \item they're prone to flakiness
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{center}
+        \includegraphics[width=.9\textwidth]{./assets/e2e-unit-comparison}
+
+        \href{https://www.trinitatum.com/blog/2015/3/2/test-automation-for-endur-part-2-beyond-unit-testing}{Link: Trinitatum Blog (2015-03-02)}
+      \end{center}
+    \end{column}
+    \end{columns}
+
 \end{frame}
 
 \begin{frame}{Architecture example}
   \begin{center}
-    \includegraphics[scale=.3]{./assets/od.png}
-  \end{center}
-\end{frame}
-
-\begin{frame}{Architecture example}
-  \begin{center}
-    \includegraphics[scale=.5]{./assets/e2e-unit-comparison}
-
-    \href{https://www.trinitatum.com/blog/2015/3/2/test-automation-for-endur-part-2-beyond-unit-testing}{Link: Trinitatum Blog (2015-03-02)}
+    \includegraphics[scale=.3]{./assets/od}
   \end{center}
 \end{frame}
 
 
 \begin{frame}{Distributed $\ne$ Decoupled}
   \begin{center}
-    \includegraphics[scale=.43]{./assets/coupling.png}
+    \includegraphics[scale=.43]{./assets/coupling}
 
     \textit{Is this one or three pipelines?}
   \end{center}

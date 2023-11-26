@@ -8,28 +8,45 @@
     \end{center}
 \end{frame}
 
+\begin{frame}{CDC vs. PDC}
+    \begin{itemize}
+        \item \textbf{Consumer Driven Contract}
+        \begin{itemize}
+            \item Open and incomplete
+            \item Multiple and collaborative
+            \item Bounded stability and immutability
+        \end{itemize}
+        \item \textbf{Provider Driven Contract}
+        \begin{itemize}
+            \item Closed and complete
+            \item Singular and authoritative
+            \item Bounded stability and immutability
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
 
 \begin{frame}{Benefits of CDC}
-
     \begin{itemize}
         \item Customer centric
-        \item Fast feedback loops while still keeping test isolation
+        \begin{itemize}
+            \item Focus on what to deliver to customers
+            \item Fine grained insights about dynamics of the system
+        \end{itemize}
+        \item Contract change as proposal
+        \item Fast feedback loop, with realistic scenarios, while keeping tests isolated
+        \item Improved communication between teams
     \end{itemize}
 
 \end{frame}
 
 
-\begin{frame}{Where not to use CDC}
+\begin{frame}{Consequences for the development process}
     \begin{itemize}
-        \item To replace functional tests or unit tests
-        \item Error handling
+        \item Design by contract (SOLID, especially the \textbf{I})
+        \item Need for separated API Layers
+        \item More focus on the client-facing parts of the system
     \end{itemize}
-    \end{frame}
 
-
-\begin{frame}{Contract testing and Interface Segregation Principle}
-    \begin{itemize}
-        \item<1-2> Contract testing ensure that services can communicate with each other effectively
-        \item<2> Interfaces are what services use to communicate with each other
-    \end{itemize}
 \end{frame}
+

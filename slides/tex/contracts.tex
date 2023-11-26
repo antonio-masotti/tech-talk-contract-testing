@@ -1,9 +1,8 @@
 %! Author = antoniomasotti
 %! Date = 25.11.23
 
-
+\subsection{Definitions}
 \begin{frame}{Contracts}
-
     \begin{block}{Contracts}
         \textit{A formal agreement between parties or individual.
         Synonyms: pact, agreement, protocol, deal}
@@ -12,15 +11,15 @@
     \end{block}
 
     \begin{block}{Contract Testing}
-        \textit{Contract testing is a technique for testing an integration point by checking each
-        application in isolation to ensure the messages it sends or receives conform to a
-        shared understanding that is documented in a "contract".}
+        \textit{A contract test is a test at the boundary of an external service, verifying
+        that it meets the contract expected by a consuming service.}
 
-        --- Pact Docs
+        --- Martin Fowler
     \end{block}
 
 \end{frame}
 
+\subsection{Understanding contracts}
 \begin{frame}{A pact between who?}
 
     \only<1-2>{
@@ -46,14 +45,14 @@
     }
 \end{frame}
 
-\begin{frame}{Contract Test Role}
+\begin{frame}{The role of contracts in testing}
     \begin{center}
         \includegraphics[scale=.3]{./assets/contract_divided}
         \includegraphics[scale=.3]{./assets/contract_united}
     \end{center}
 \end{frame}
 
-\begin{frame}{Who initiates the contract?}
+\begin{frame}{Who does initiate the contract?}
     Both parties can initiate the contract, \textbf{but...}
 
     Here I will present you the \textbf{Consumer Driven Contracts} approach.
@@ -98,19 +97,6 @@
 
 
 \subsection{Pact}
-
-\begin{frame}{Pact}
-    \begin{itemize}
-        \item Pact is a contract testing tool
-        \item It is a JVM tool, but it can be used with any language
-        \item It is a \textbf{consumer driven} tool
-        \item It is a \textbf{mocking} tool
-        \item It is a \textbf{verification} tool
-        \item It is a \textbf{documentation} tool
-        \item It is a \textbf{collaboration} tool
-        \end{itemize}
-\end{frame}
-
 \begin{frame}{Pact - Overview}
     \begin{center}
         \includegraphics[width=.8\textwidth]{./assets/pact_overview}
